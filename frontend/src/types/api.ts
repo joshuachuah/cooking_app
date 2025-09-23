@@ -31,11 +31,15 @@ export interface IngredientInputProps {
   setIngredients: (ingredients: string[]) => void;
 }
 
+export interface DietaryPreferences {
+  dietaryRestrictions: string[];
+  timePreference: string;
+  difficulty: string;
+}
+
 export interface PreferencesSectionProps {
-  dietaryPreferences: string[];
-  setDietaryPreferences: (preferences: string[]) => void;
-  maxPrepTime: string;
-  setMaxPrepTime: (time: string) => void;
+  dietaryPreferences: DietaryPreferences;
+  setDietaryPreferences: (preferences: DietaryPreferences) => void;
 }
 
 export interface RecipesListProps {
