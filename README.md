@@ -40,7 +40,20 @@ cook_fast/
    cd cook_fast
    ```
 
-2. **Set up the backend:**
+2. **Set up a Python virtual environment:**
+   ```bash
+   # Create a virtual environment
+   python -m venv venv
+   
+   # Activate the virtual environment
+   # On Windows:
+   venv\Scripts\activate
+   
+   # On macOS/Linux:
+   source venv/bin/activate
+   ```
+
+3. **Set up the backend:**
    ```bash
    cd backend
    pip install -r requirements.txt
@@ -53,7 +66,7 @@ cook_fast/
    ```
    The backend will be available at `http://localhost:8000`
 
-3. **Set up the frontend (in a new terminal):**
+4. **Set up the frontend (in a new terminal):**
    ```bash
    cd frontend
    npm install
